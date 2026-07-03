@@ -15,26 +15,18 @@ binned data has the squared empirical characteristic function as its spectrum, t
 cutoff where it meets the 1/n sampling-noise floor. Two enhancements follow: an automatic bandwidth
 selector, and an adaptive per-frequency Wiener estimator that generalizes the fixed kernel. A
 single AD-KDE estimator, a scale decomposition of a smooth mixture base and a band-limited residual
-with no mixing weight, collects the strengths of both stages and is the paper's headline object.
+with no mixing weight, collects the strengths of both stages and is the manuscript's central object.
 Evaluated on the Marron-Wand benchmark across seven sample sizes, n = 50 to 5000, with an honest,
 continuously traced sample-size crossover
 and on four real datasets (CRSP returns, CMS dimuon and SDSS galaxy-redshift spectra, UNSW-NB15 network
 traffic).
 
-## Build
-    ./build.sh           # regenerate self-contained figures, then compile
-    ./build.sh --check    # also verify page count and reference resolution
-
 ## Contents
-- `figures/`, `scripts/` - figures and the code that produces them
-- `DATA.md`, `the release notes` - data provenance/reproduction and the provenance of this pull
 
-## Provenance
-Pulled from the author's "Enhanced Kernel Density Estimation using Algebraic Diversity" master
-manuscript, scoped to the core spectral method (selector, AD-Wiener, superposition), the benchmark,
-and the real-data validations. The heaped/rounded-data treatment is a separate companion paper; the
-multivariate covariance, bounded-support, deconvolution, and synthetic-generation material is left to
-the master and the author's other manuscripts. 
+- `scripts/` - the estimator implementation and every experiment script
+- `results/` - results files of the recorded runs (fixed seeds), spliced verbatim into the tables
+- `DATA.md` - data provenance and reproduction commands
+- `PATENTS.md`, `LICENSE` - intellectual-property notice and MIT license for the code
 
 ## Reproduction map
 
