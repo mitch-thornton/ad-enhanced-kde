@@ -1,0 +1,553 @@
+{
+ "script": "exp_benchmark_v28.py",
+ "mean_ise_x1e3": {
+  "1 Gaussian|n=50": {
+   "Silverman": 10.446,
+   "ISJ/Botev": 11.0502,
+   "LSCV": 15.1486,
+   "Abramson": 12.3626,
+   "GMM-BIC": 7.1299,
+   "AD-Wiener": 18.576,
+   "superpose": 4.8842
+  },
+  "2 Skewed unimodal|n=50": {
+   "Silverman": 16.2996,
+   "ISJ/Botev": 18.9911,
+   "LSCV": 23.1379,
+   "Abramson": 16.4124,
+   "GMM-BIC": 23.3716,
+   "AD-Wiener": 22.0332,
+   "superpose": 23.5758
+  },
+  "3 Strongly skewed|n=50": {
+   "Silverman": 159.306,
+   "ISJ/Botev": 90.7515,
+   "LSCV": 87.2722,
+   "Abramson": 133.368,
+   "GMM-BIC": 141.0195,
+   "AD-Wiener": 92.5326,
+   "superpose": 98.7668
+  },
+  "4 Kurtotic unimodal|n=50": {
+   "Silverman": 130.6697,
+   "ISJ/Botev": 93.4522,
+   "LSCV": 96.5609,
+   "Abramson": 96.3679,
+   "GMM-BIC": 171.3944,
+   "AD-Wiener": 88.2909,
+   "superpose": 118.3176
+  },
+  "5 Outlier|n=50": {
+   "Silverman": 106.677,
+   "ISJ/Botev": 118.9094,
+   "LSCV": 158.6471,
+   "Abramson": 115.3413,
+   "GMM-BIC": 150.3328,
+   "AD-Wiener": 119.4158,
+   "superpose": 94.9216
+  },
+  "6 Bimodal|n=50": {
+   "Silverman": 13.208,
+   "ISJ/Botev": 14.9538,
+   "LSCV": 16.198,
+   "Abramson": 14.1618,
+   "GMM-BIC": 28.0342,
+   "AD-Wiener": 19.6997,
+   "superpose": 27.2015
+  },
+  "7 Separated bimodal|n=50": {
+   "Silverman": 62.6164,
+   "ISJ/Botev": 21.2918,
+   "LSCV": 24.2079,
+   "Abramson": 58.6956,
+   "GMM-BIC": 19.3662,
+   "AD-Wiener": 26.2615,
+   "superpose": 26.433
+  },
+  "8 Skewed bimodal|n=50": {
+   "Silverman": 15.5703,
+   "ISJ/Botev": 17.674,
+   "LSCV": 19.6139,
+   "Abramson": 16.1015,
+   "GMM-BIC": 30.0549,
+   "AD-Wiener": 22.2232,
+   "superpose": 26.2019
+  },
+  "9 Trimodal|n=50": {
+   "Silverman": 15.0978,
+   "ISJ/Botev": 17.4327,
+   "LSCV": 18.2278,
+   "Abramson": 16.0674,
+   "GMM-BIC": 31.3543,
+   "AD-Wiener": 21.3888,
+   "superpose": 30.3051
+  },
+  "10 Claw|n=50": {
+   "Silverman": 57.787,
+   "ISJ/Botev": 60.0144,
+   "LSCV": 64.9928,
+   "Abramson": 61.1823,
+   "GMM-BIC": 62.9626,
+   "AD-Wiener": 62.5953,
+   "superpose": 61.6556
+  },
+  "11 Double claw|n=50": {
+   "Silverman": 14.4813,
+   "ISJ/Botev": 16.3035,
+   "LSCV": 17.9919,
+   "Abramson": 15.5466,
+   "GMM-BIC": 30.1174,
+   "AD-Wiener": 21.462,
+   "superpose": 28.2863
+  },
+  "12 Asymmetric claw|n=50": {
+   "Silverman": 32.4643,
+   "ISJ/Botev": 33.8969,
+   "LSCV": 36.5987,
+   "Abramson": 35.8127,
+   "GMM-BIC": 38.5672,
+   "AD-Wiener": 40.6715,
+   "superpose": 38.2285
+  },
+  "13 Asym double claw|n=50": {
+   "Silverman": 18.4401,
+   "ISJ/Botev": 20.8457,
+   "LSCV": 25.1708,
+   "Abramson": 18.9804,
+   "GMM-BIC": 37.4852,
+   "AD-Wiener": 23.4348,
+   "superpose": 33.0796
+  },
+  "14 Smooth comb|n=50": {
+   "Silverman": 94.7749,
+   "ISJ/Botev": 58.5052,
+   "LSCV": 57.7388,
+   "Abramson": 91.678,
+   "GMM-BIC": 82.5473,
+   "AD-Wiener": 58.7786,
+   "superpose": 59.1108
+  },
+  "15 Discrete comb|n=50": {
+   "Silverman": 120.7537,
+   "ISJ/Botev": 56.7851,
+   "LSCV": 63.2077,
+   "Abramson": 123.3239,
+   "GMM-BIC": 89.0804,
+   "AD-Wiener": 62.7258,
+   "superpose": 65.0083
+  },
+  "1 Gaussian|n=200": {
+   "Silverman": 3.5824,
+   "ISJ/Botev": 3.6459,
+   "LSCV": 6.17,
+   "Abramson": 4.0665,
+   "GMM-BIC": 2.0235,
+   "AD-Wiener": 5.0957,
+   "superpose": 2.0236
+  },
+  "2 Skewed unimodal|n=200": {
+   "Silverman": 5.3404,
+   "ISJ/Botev": 5.5578,
+   "LSCV": 7.1627,
+   "Abramson": 5.1218,
+   "GMM-BIC": 9.2251,
+   "AD-Wiener": 6.4393,
+   "superpose": 7.3418
+  },
+  "3 Strongly skewed|n=200": {
+   "Silverman": 127.5526,
+   "ISJ/Botev": 34.2381,
+   "LSCV": 33.8674,
+   "Abramson": 95.8942,
+   "GMM-BIC": 61.9416,
+   "AD-Wiener": 35.621,
+   "superpose": 36.1592
+  },
+  "4 Kurtotic unimodal|n=200": {
+   "Silverman": 77.6505,
+   "ISJ/Botev": 29.4555,
+   "LSCV": 31.4157,
+   "Abramson": 33.785,
+   "GMM-BIC": 21.9859,
+   "AD-Wiener": 28.9935,
+   "superpose": 29.1201
+  },
+  "5 Outlier|n=200": {
+   "Silverman": 33.7133,
+   "ISJ/Botev": 35.1584,
+   "LSCV": 53.3766,
+   "Abramson": 33.9587,
+   "GMM-BIC": 18.6369,
+   "AD-Wiener": 26.6819,
+   "superpose": 16.0753
+  },
+  "6 Bimodal|n=200": {
+   "Silverman": 5.5396,
+   "ISJ/Botev": 5.1561,
+   "LSCV": 5.9583,
+   "Abramson": 4.9933,
+   "GMM-BIC": 6.0001,
+   "AD-Wiener": 6.6457,
+   "superpose": 6.0785
+  },
+  "7 Separated bimodal|n=200": {
+   "Silverman": 33.153,
+   "ISJ/Botev": 6.9688,
+   "LSCV": 8.6589,
+   "Abramson": 25.5589,
+   "GMM-BIC": 4.1365,
+   "AD-Wiener": 8.1723,
+   "superpose": 8.3476
+  },
+  "8 Skewed bimodal|n=200": {
+   "Silverman": 8.0972,
+   "ISJ/Botev": 7.2239,
+   "LSCV": 8.3397,
+   "Abramson": 7.3846,
+   "GMM-BIC": 13.6638,
+   "AD-Wiener": 7.7299,
+   "superpose": 9.2078
+  },
+  "9 Trimodal|n=200": {
+   "Silverman": 7.4307,
+   "ISJ/Botev": 5.9543,
+   "LSCV": 6.5365,
+   "Abramson": 6.724,
+   "GMM-BIC": 8.5271,
+   "AD-Wiener": 6.7452,
+   "superpose": 7.6155
+  },
+  "10 Claw|n=200": {
+   "Silverman": 48.9083,
+   "ISJ/Botev": 25.8072,
+   "LSCV": 23.7607,
+   "Abramson": 49.5531,
+   "GMM-BIC": 54.2437,
+   "AD-Wiener": 33.2253,
+   "superpose": 50.459
+  },
+  "11 Double claw|n=200": {
+   "Silverman": 6.81,
+   "ISJ/Botev": 6.5029,
+   "LSCV": 7.3655,
+   "Abramson": 6.3136,
+   "GMM-BIC": 7.7178,
+   "AD-Wiener": 8.0296,
+   "superpose": 7.4609
+  },
+  "12 Asymmetric claw|n=200": {
+   "Silverman": 24.6454,
+   "ISJ/Botev": 19.9694,
+   "LSCV": 17.5973,
+   "Abramson": 24.5429,
+   "GMM-BIC": 31.074,
+   "AD-Wiener": 17.5542,
+   "superpose": 26.2052
+  },
+  "13 Asym double claw|n=200": {
+   "Silverman": 10.344,
+   "ISJ/Botev": 9.5937,
+   "LSCV": 10.8365,
+   "Abramson": 9.4171,
+   "GMM-BIC": 9.7814,
+   "AD-Wiener": 10.4559,
+   "superpose": 10.3069
+  },
+  "14 Smooth comb|n=200": {
+   "Silverman": 75.0098,
+   "ISJ/Botev": 27.226,
+   "LSCV": 26.1892,
+   "Abramson": 69.5868,
+   "GMM-BIC": 32.835,
+   "AD-Wiener": 26.7652,
+   "superpose": 27.1198
+  },
+  "15 Discrete comb|n=200": {
+   "Silverman": 103.8561,
+   "ISJ/Botev": 27.9458,
+   "LSCV": 27.8961,
+   "Abramson": 101.4017,
+   "GMM-BIC": 28.6863,
+   "AD-Wiener": 27.1551,
+   "superpose": 27.2762
+  },
+  "1 Gaussian|n=1000": {
+   "Silverman": 0.9087,
+   "ISJ/Botev": 0.9445,
+   "LSCV": 1.2487,
+   "Abramson": 1.2038,
+   "GMM-BIC": 0.2521,
+   "AD-Wiener": 1.114,
+   "superpose": 0.2522
+  },
+  "2 Skewed unimodal|n=1000": {
+   "Silverman": 1.5216,
+   "ISJ/Botev": 1.5672,
+   "LSCV": 1.6797,
+   "Abramson": 1.5485,
+   "GMM-BIC": 0.9809,
+   "AD-Wiener": 1.3658,
+   "superpose": 0.7768
+  },
+  "3 Strongly skewed|n=1000": {
+   "Silverman": 90.0516,
+   "ISJ/Botev": 9.7642,
+   "LSCV": 9.6994,
+   "Abramson": 58.143,
+   "GMM-BIC": 30.7405,
+   "AD-Wiener": 9.8002,
+   "superpose": 9.71
+  },
+  "4 Kurtotic unimodal|n=1000": {
+   "Silverman": 42.7711,
+   "ISJ/Botev": 8.4447,
+   "LSCV": 8.442,
+   "Abramson": 9.9553,
+   "GMM-BIC": 5.5906,
+   "AD-Wiener": 7.0378,
+   "superpose": 7.0318
+  },
+  "5 Outlier|n=1000": {
+   "Silverman": 8.8111,
+   "ISJ/Botev": 9.1336,
+   "LSCV": 12.5639,
+   "Abramson": 10.6061,
+   "GMM-BIC": 2.7246,
+   "AD-Wiener": 5.6275,
+   "superpose": 2.6941
+  },
+  "6 Bimodal|n=1000": {
+   "Silverman": 1.7603,
+   "ISJ/Botev": 1.3471,
+   "LSCV": 1.547,
+   "Abramson": 1.1686,
+   "GMM-BIC": 0.7674,
+   "AD-Wiener": 1.568,
+   "superpose": 0.8161
+  },
+  "7 Separated bimodal|n=1000": {
+   "Silverman": 13.7258,
+   "ISJ/Botev": 1.8764,
+   "LSCV": 2.1833,
+   "Abramson": 6.89,
+   "GMM-BIC": 0.869,
+   "AD-Wiener": 1.9299,
+   "superpose": 1.9259
+  },
+  "8 Skewed bimodal|n=1000": {
+   "Silverman": 3.2604,
+   "ISJ/Botev": 2.0015,
+   "LSCV": 2.0796,
+   "Abramson": 2.0451,
+   "GMM-BIC": 5.329,
+   "AD-Wiener": 1.8936,
+   "superpose": 1.8347
+  },
+  "9 Trimodal|n=1000": {
+   "Silverman": 3.1813,
+   "ISJ/Botev": 1.7491,
+   "LSCV": 1.9207,
+   "Abramson": 2.1616,
+   "GMM-BIC": 4.126,
+   "AD-Wiener": 1.9826,
+   "superpose": 4.0698
+  },
+  "10 Claw|n=1000": {
+   "Silverman": 42.5351,
+   "ISJ/Botev": 7.2193,
+   "LSCV": 7.5239,
+   "Abramson": 41.0994,
+   "GMM-BIC": 8.9415,
+   "AD-Wiener": 5.5117,
+   "superpose": 19.7534
+  },
+  "11 Double claw|n=1000": {
+   "Silverman": 3.1986,
+   "ISJ/Botev": 2.7567,
+   "LSCV": 3.0038,
+   "Abramson": 2.6149,
+   "GMM-BIC": 2.2306,
+   "AD-Wiener": 2.9327,
+   "superpose": 2.2779
+  },
+  "12 Asymmetric claw|n=1000": {
+   "Silverman": 18.2443,
+   "ISJ/Botev": 7.47,
+   "LSCV": 7.1656,
+   "Abramson": 16.9249,
+   "GMM-BIC": 14.9033,
+   "AD-Wiener": 7.8623,
+   "superpose": 15.9498
+  },
+  "13 Asym double claw|n=1000": {
+   "Silverman": 6.3566,
+   "ISJ/Botev": 5.1587,
+   "LSCV": 4.8418,
+   "Abramson": 5.5573,
+   "GMM-BIC": 5.192,
+   "AD-Wiener": 5.3976,
+   "superpose": 5.2489
+  },
+  "14 Smooth comb|n=1000": {
+   "Silverman": 55.4378,
+   "ISJ/Botev": 11.6405,
+   "LSCV": 10.8392,
+   "Abramson": 51.1466,
+   "GMM-BIC": 15.3099,
+   "AD-Wiener": 11.7454,
+   "superpose": 11.7611
+  },
+  "15 Discrete comb|n=1000": {
+   "Silverman": 75.0579,
+   "ISJ/Botev": 9.569,
+   "LSCV": 8.9063,
+   "Abramson": 68.1022,
+   "GMM-BIC": 19.3712,
+   "AD-Wiener": 9.0025,
+   "superpose": 8.7421
+  },
+  "1 Gaussian|n=2000": {
+   "Silverman": 0.7354,
+   "ISJ/Botev": 0.7511,
+   "LSCV": 0.9464,
+   "Abramson": 0.7785,
+   "GMM-BIC": 0.1292,
+   "AD-Wiener": 0.6708,
+   "superpose": 0.1292
+  },
+  "2 Skewed unimodal|n=2000": {
+   "Silverman": 1.0054,
+   "ISJ/Botev": 1.0194,
+   "LSCV": 1.4198,
+   "Abramson": 0.9778,
+   "GMM-BIC": 0.5914,
+   "AD-Wiener": 0.8209,
+   "superpose": 0.4336
+  },
+  "3 Strongly skewed|n=2000": {
+   "Silverman": 75.6024,
+   "ISJ/Botev": 4.9742,
+   "LSCV": 5.5869,
+   "Abramson": 44.1533,
+   "GMM-BIC": 20.8812,
+   "AD-Wiener": 4.9429,
+   "superpose": 4.9452
+  },
+  "4 Kurtotic unimodal|n=2000": {
+   "Silverman": 31.4966,
+   "ISJ/Botev": 4.8757,
+   "LSCV": 5.2535,
+   "Abramson": 5.2949,
+   "GMM-BIC": 3.2049,
+   "AD-Wiener": 3.9617,
+   "superpose": 3.9618
+  },
+  "5 Outlier|n=2000": {
+   "Silverman": 7.096,
+   "ISJ/Botev": 7.1563,
+   "LSCV": 8.9778,
+   "Abramson": 7.1798,
+   "GMM-BIC": 1.8203,
+   "AD-Wiener": 4.4839,
+   "superpose": 1.7521
+  },
+  "6 Bimodal|n=2000": {
+   "Silverman": 1.3238,
+   "ISJ/Botev": 0.9681,
+   "LSCV": 1.2092,
+   "Abramson": 0.8082,
+   "GMM-BIC": 0.3721,
+   "AD-Wiener": 0.8573,
+   "superpose": 0.4378
+  },
+  "7 Separated bimodal|n=2000": {
+   "Silverman": 9.523,
+   "ISJ/Botev": 1.3159,
+   "LSCV": 1.4981,
+   "Abramson": 3.8231,
+   "GMM-BIC": 0.4137,
+   "AD-Wiener": 1.0432,
+   "superpose": 0.433
+  },
+  "8 Skewed bimodal|n=2000": {
+   "Silverman": 2.2604,
+   "ISJ/Botev": 1.2396,
+   "LSCV": 1.3832,
+   "Abramson": 1.0908,
+   "GMM-BIC": 2.6114,
+   "AD-Wiener": 1.1183,
+   "superpose": 0.6409
+  },
+  "9 Trimodal|n=2000": {
+   "Silverman": 2.4543,
+   "ISJ/Botev": 1.2455,
+   "LSCV": 1.4269,
+   "Abramson": 1.5315,
+   "GMM-BIC": 2.3269,
+   "AD-Wiener": 1.1464,
+   "superpose": 2.2282
+  },
+  "10 Claw|n=2000": {
+   "Silverman": 39.5416,
+   "ISJ/Botev": 4.1795,
+   "LSCV": 4.5006,
+   "Abramson": 35.9868,
+   "GMM-BIC": 4.2708,
+   "AD-Wiener": 3.2525,
+   "superpose": 8.6198
+  },
+  "11 Double claw|n=2000": {
+   "Silverman": 2.7974,
+   "ISJ/Botev": 2.4251,
+   "LSCV": 2.6409,
+   "Abramson": 2.2835,
+   "GMM-BIC": 1.8791,
+   "AD-Wiener": 2.31,
+   "superpose": 1.9376
+  },
+  "12 Asymmetric claw|n=2000": {
+   "Silverman": 15.6916,
+   "ISJ/Botev": 4.6383,
+   "LSCV": 4.6834,
+   "Abramson": 13.7276,
+   "GMM-BIC": 9.2522,
+   "AD-Wiener": 5.1971,
+   "superpose": 10.7062
+  },
+  "13 Asym double claw|n=2000": {
+   "Silverman": 5.6967,
+   "ISJ/Botev": 3.6172,
+   "LSCV": 3.6876,
+   "Abramson": 5.0119,
+   "GMM-BIC": 4.8038,
+   "AD-Wiener": 3.7717,
+   "superpose": 4.8635
+  },
+  "14 Smooth comb|n=2000": {
+   "Silverman": 49.2001,
+   "ISJ/Botev": 7.7421,
+   "LSCV": 7.5121,
+   "Abramson": 45.0145,
+   "GMM-BIC": 12.4919,
+   "AD-Wiener": 7.5391,
+   "superpose": 7.3756
+  },
+  "15 Discrete comb|n=2000": {
+   "Silverman": 62.7385,
+   "ISJ/Botev": 5.5518,
+   "LSCV": 5.7733,
+   "Abramson": 54.5442,
+   "GMM-BIC": 15.8563,
+   "AD-Wiener": 4.6636,
+   "superpose": 4.679
+  }
+ },
+ "reps": 50,
+ "seed_rule": "default_rng(1000*r+n)",
+ "ns": [
+  50,
+  200,
+  1000,
+  2000
+ ]
+}

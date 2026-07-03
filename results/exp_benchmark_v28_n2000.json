@@ -1,0 +1,146 @@
+{
+ "script": "exp_benchmark_v28.py",
+ "mean_ise_x1e3": {
+  "1 Gaussian|n=2000": {
+   "Silverman": 0.7354,
+   "ISJ/Botev": 0.7511,
+   "LSCV": 0.9464,
+   "Abramson": 0.7785,
+   "GMM-BIC": 0.1292,
+   "AD-Wiener": 0.6708,
+   "superpose": 0.1292
+  },
+  "2 Skewed unimodal|n=2000": {
+   "Silverman": 1.0054,
+   "ISJ/Botev": 1.0194,
+   "LSCV": 1.4198,
+   "Abramson": 0.9778,
+   "GMM-BIC": 0.5914,
+   "AD-Wiener": 0.8209,
+   "superpose": 0.4336
+  },
+  "3 Strongly skewed|n=2000": {
+   "Silverman": 75.6024,
+   "ISJ/Botev": 4.9742,
+   "LSCV": 5.5869,
+   "Abramson": 44.1533,
+   "GMM-BIC": 20.8812,
+   "AD-Wiener": 4.9429,
+   "superpose": 4.9452
+  },
+  "4 Kurtotic unimodal|n=2000": {
+   "Silverman": 31.4966,
+   "ISJ/Botev": 4.8757,
+   "LSCV": 5.2535,
+   "Abramson": 5.2949,
+   "GMM-BIC": 3.2049,
+   "AD-Wiener": 3.9617,
+   "superpose": 3.9618
+  },
+  "5 Outlier|n=2000": {
+   "Silverman": 7.096,
+   "ISJ/Botev": 7.1563,
+   "LSCV": 8.9778,
+   "Abramson": 7.1798,
+   "GMM-BIC": 1.8203,
+   "AD-Wiener": 4.4839,
+   "superpose": 1.7521
+  },
+  "6 Bimodal|n=2000": {
+   "Silverman": 1.3238,
+   "ISJ/Botev": 0.9681,
+   "LSCV": 1.2092,
+   "Abramson": 0.8082,
+   "GMM-BIC": 0.3721,
+   "AD-Wiener": 0.8573,
+   "superpose": 0.4378
+  },
+  "7 Separated bimodal|n=2000": {
+   "Silverman": 9.523,
+   "ISJ/Botev": 1.3159,
+   "LSCV": 1.4981,
+   "Abramson": 3.8231,
+   "GMM-BIC": 0.4137,
+   "AD-Wiener": 1.0432,
+   "superpose": 0.433
+  },
+  "8 Skewed bimodal|n=2000": {
+   "Silverman": 2.2604,
+   "ISJ/Botev": 1.2396,
+   "LSCV": 1.3832,
+   "Abramson": 1.0908,
+   "GMM-BIC": 2.6114,
+   "AD-Wiener": 1.1183,
+   "superpose": 0.6409
+  },
+  "9 Trimodal|n=2000": {
+   "Silverman": 2.4543,
+   "ISJ/Botev": 1.2455,
+   "LSCV": 1.4269,
+   "Abramson": 1.5315,
+   "GMM-BIC": 2.3269,
+   "AD-Wiener": 1.1464,
+   "superpose": 2.2282
+  },
+  "10 Claw|n=2000": {
+   "Silverman": 39.5416,
+   "ISJ/Botev": 4.1795,
+   "LSCV": 4.5006,
+   "Abramson": 35.9868,
+   "GMM-BIC": 4.2708,
+   "AD-Wiener": 3.2525,
+   "superpose": 8.6198
+  },
+  "11 Double claw|n=2000": {
+   "Silverman": 2.7974,
+   "ISJ/Botev": 2.4251,
+   "LSCV": 2.6409,
+   "Abramson": 2.2835,
+   "GMM-BIC": 1.8791,
+   "AD-Wiener": 2.31,
+   "superpose": 1.9376
+  },
+  "12 Asymmetric claw|n=2000": {
+   "Silverman": 15.6916,
+   "ISJ/Botev": 4.6383,
+   "LSCV": 4.6834,
+   "Abramson": 13.7276,
+   "GMM-BIC": 9.2522,
+   "AD-Wiener": 5.1971,
+   "superpose": 10.7062
+  },
+  "13 Asym double claw|n=2000": {
+   "Silverman": 5.6967,
+   "ISJ/Botev": 3.6172,
+   "LSCV": 3.6876,
+   "Abramson": 5.0119,
+   "GMM-BIC": 4.8038,
+   "AD-Wiener": 3.7717,
+   "superpose": 4.8635
+  },
+  "14 Smooth comb|n=2000": {
+   "Silverman": 49.2001,
+   "ISJ/Botev": 7.7421,
+   "LSCV": 7.5121,
+   "Abramson": 45.0145,
+   "GMM-BIC": 12.4919,
+   "AD-Wiener": 7.5391,
+   "superpose": 7.3756
+  },
+  "15 Discrete comb|n=2000": {
+   "Silverman": 62.7385,
+   "ISJ/Botev": 5.5518,
+   "LSCV": 5.7733,
+   "Abramson": 54.5442,
+   "GMM-BIC": 15.8563,
+   "AD-Wiener": 4.6636,
+   "superpose": 4.679
+  }
+ },
+ "note": "merged from 5 chunk files",
+ "reps": 50,
+ "ns": [
+  2000
+ ],
+ "seed_rule": "default_rng(1000*r+n)"
+}
